@@ -1,0 +1,54 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  width: 209px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.login-button {
+  margin-top: 20px;
+  padding: 5px;
+  background-color: #ff5722;
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+
+/* className .container */
+
+
+/* events */
+
+
+/* 100% 
+
+onChange
+onClick */
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 60px;
+  aspect-ratio: 4;
+  --c:#000 90%,#0000;
+  background: 
+    radial-gradient(circle closest-side at left  6px top 50%,var(--c)),
+    radial-gradient(circle closest-side                     ,var(--c)),
+    radial-gradient(circle closest-side at right 6px top 50%,var(--c));
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  animation: l4 1s infinite alternate;
+}
+@keyframes l4 {
+    to{width:25px;aspect-ratio: 1}
+}
